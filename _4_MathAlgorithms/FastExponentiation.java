@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FastExponentiation {
   // logic if even power -> X^n == (x^2)^n/2
   // logic if odd power -> X^m == (x^2)^((m-1)/2)
+  
   static void fastExponentiation(int num, int power) {
     int result = 1;
     while (power > 0) {

@@ -15,6 +15,10 @@ public class DecimalToAnyBase {
       if (base == 2 || base == 8) {
         decimalToAnyBase(decimalNum, base);
       } else if (base == 16) {
+        if(decimalNum == 0){
+          System.out.println("Equivalent value is : " + 0);
+          return;
+        }
         decimalToHexadecimal(decimalNum, base);
       } else {
         throw new Exception("You entered the invalid base.");

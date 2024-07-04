@@ -30,7 +30,7 @@ public class AnyBaseToDecimal {
       num /= 10;
       power++;
     }
-    System.out.println("Conversion result : " + res);
+    System.out.println("Equivalent decimal value is : " + res);
   }
 
   static void hexToDecimal(String hexnum, int base) {

@@ -15,7 +15,7 @@ public class DecimalToAnyBase {
       if (base == 2 || base == 8) {
         decimalToAnyBase(decimalNum, base);
       } else if (base == 16) {
-        if(decimalNum == 0){
+        if (decimalNum == 0) {
           System.out.println("Equivalent value is : " + 0);
           return;
         }
@@ -36,7 +36,7 @@ public class DecimalToAnyBase {
       decimalNum /= base;
       power++;
     }
-    System.out.print("Converted value is : " + res);
+    System.out.print("Equivalent value is : " + res);
   }
 
   static void decimalToHexadecimal(int decimalNum, int base) {
@@ -61,15 +61,14 @@ public class DecimalToAnyBase {
         remainder = "f";
         res = remainder + res;
       } else {
-        if(decimalNum%16 == 0){
+        if (decimalNum % 16 == 0) {
           res = "0" + res;
-        }
-        else{
+        } else {
           res = decimalNum % 16 + res;
         }
       }
       decimalNum /= base;
     }
-    System.out.print("Converted value is : " + res);
+    System.out.print("Equivalent value is : " + res);
   }
 }

@@ -35,7 +35,7 @@ public class AnyBaseToDecimal {
 
   static void hexToDecimal(String hexnum, int base) {
     int decimal = 0, i = 0, len, rem;
-    len = hexnum.length()-1;
+    len = hexnum.length() - 1;
     while (len >= 0) {
       rem = hexnum.charAt(len);
       if (rem >= 48 && rem <= 57)
@@ -45,7 +45,7 @@ public class AnyBaseToDecimal {
       else if (rem >= 97 && rem <= 102)
         rem = rem - 87;
       else {
-        System.out.println("Invalid hexnum Digit!");
+        System.out.println("Invalid hexadecimal number!");
         return;
       }
       decimal = (int) (decimal + (rem * Math.pow(16, i)));

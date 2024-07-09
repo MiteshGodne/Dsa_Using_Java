@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class OddOrEven {
 
   public static void oddOrEven(int num) {
-    if (NthBit.nthBit(num, 0))
+    if ((num&1) == 1)
       System.out.printf("%d is odd", num);
     else
       System.out.printf("%d is even", num);

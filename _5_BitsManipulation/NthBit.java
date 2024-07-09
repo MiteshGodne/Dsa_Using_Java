@@ -1,5 +1,6 @@
 package _5_BitsManipulation;
 
+
 import java.util.Scanner;
 
 public class NthBit {

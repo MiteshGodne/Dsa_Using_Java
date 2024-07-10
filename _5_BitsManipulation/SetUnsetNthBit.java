@@ -15,6 +15,7 @@ public class SetUnsetNthBit {
     try (Scanner sc = new Scanner(System.in)) {
       System.out.print("Enter the number : ");
       int num = sc.nextInt();
+
       System.out.println("To set a bit enter 1 and to unset a bit enter 0");
       int choice = sc.nextInt();
 
@@ -26,8 +27,7 @@ public class SetUnsetNthBit {
             num);
         EightBitBinaryEquivalent.printEightBitEquivalent(res);
         System.out.println("\n");
-      }
-      else {
+      } else if (choice == 0) {
         System.out.print("Enter the bit position (from right) you want to unset : ");
         int n = sc.nextInt();
         int res = unsetNthBit(num, n - 1);
@@ -35,6 +35,9 @@ public class SetUnsetNthBit {
             num);
         EightBitBinaryEquivalent.printEightBitEquivalent(res);
         System.out.println("\n");
+      }
+      else{
+        System.out.println("Error >> You entered the wrong choice !!");
       }
     }
   }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CharCaseConversion {
   public static int toUppercase(int letter) {
     return (letter & ~(1 << 5));
-    // // as ~(1<<5) == 11011111 == '_'
+    // // as ~(1<<5) == 11011111 and '_' == 01011111
     // return (letter & '_');
   }
 
@@ -17,6 +17,7 @@ public class CharCaseConversion {
 
   public static void main(String[] args) {
     try (Scanner sc = new Scanner(System.in)) {
+
       System.out.print("Enter the character : ");
       char letter = sc.next().charAt(0);
 
@@ -27,7 +28,7 @@ public class CharCaseConversion {
         char small = (char) toLowercase(letter);
         System.out.printf(">> Lower case of '%c' is '%c' \n", letter, small);
       } else {
-        System.out.println("It's not an alphabet !!\n");
+        System.out.println(">> It's not an alphabet !!\n");
       }
     }
   }

@@ -35,8 +35,7 @@ public class SetUnsetNthBit {
             num);
         EightBitBinaryEquivalent.printEightBitEquivalent(res);
         System.out.println("\n");
-      }
-      else{
+      } else {
         System.out.println("Error >> You entered the wrong choice !!");
       }
     }

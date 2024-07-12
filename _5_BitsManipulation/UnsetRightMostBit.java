@@ -15,6 +15,8 @@ public class UnsetRightMostBit {
       EightBitBinaryEquivalent.printEightBitEquivalent(num);
       System.out.print("\n>> Binary equivalent after unsetting right most set bit is ");
       EightBitBinaryEquivalent.printEightBitEquivalent(res);
+    }catch(Exception e){
+      System.out.println("Invalid Input !!");
     }
   }
 

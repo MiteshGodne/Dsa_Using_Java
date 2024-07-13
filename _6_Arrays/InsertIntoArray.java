@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class InsertIntoArray {
   public static void insertIntoArray(int[] arr, int posi, int element) {
+    // Worst case time complexity : O(n)S
     // Shifting of elements towards the end of the array
     for (int i = arr.length - 2; i >= posi; i--) {
       arr[i + 1] = arr[i];
@@ -21,7 +22,7 @@ public class InsertIntoArray {
       for (int i = 0; i < arr.length; i++) {
         if (i == arr.length - 1) {
           System.out.print(
-              "Note : If you add last element and then insert another element in between, last element will be lost. To leave it blank enter Y and to continue press any other key : ");
+              "Note : If you add last element and then insert another element in between, last element will be lost. To leave it blank enter Y and to continue press any other character : ");
           char choice = sc.next().charAt(0);
           if (choice == 'Y' || choice == 'y') {
             break;
@@ -31,12 +32,12 @@ public class InsertIntoArray {
         arr[i] = sc.nextInt();
       }
 
-      System.out.print("Enter the position after which you want to add the element : ");
+      System.out.print("\nEnter the position after which you want to add the element : ");
       int posi = sc.nextInt();
-      if (posi < 0 || posi > arr.length - 1) {
-        System.out.println("You entered invalid position !!");
+      if (posi > arr.length - 1 || posi < 0) {
+        System.out.println("\n>> You entered invalid position !!");
       } else {
-        System.out.print("Enter the element you want to insert : ");
+        System.out.print("\nEnter the element you want to insert : ");
         int ele = sc.nextInt();
         ArrayUtility.printIntegerArray(arr);
         insertIntoArray(arr, posi, ele);

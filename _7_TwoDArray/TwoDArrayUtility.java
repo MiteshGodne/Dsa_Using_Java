@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class TwoDArrayUtility {
   public static int[][] input2DIntArray() {
     int rows, cols;
-    try (Scanner sc = new Scanner(System.in)) {
+    @SuppressWarnings("resource")
+    Scanner sc = new Scanner(System.in);
       System.out.print("Enter the number of rows : ");
       rows = sc.nextInt();
       System.out.print("Enter the number of cols : ");
@@ -18,7 +19,6 @@ public class TwoDArrayUtility {
         }
       }
       return arr;
-    }
   }
 
   public static void print2DIntArray(int[][] arr) {

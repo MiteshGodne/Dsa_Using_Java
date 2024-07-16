@@ -11,6 +11,7 @@ public class ArrayUtility {
 
   public static int[] inputIntArray(int size) {
     int arr[] = new int[size];
+    @SuppressWarnings("resource")
     Scanner scan = new Scanner(System.in);
     for (int i = 0; i < arr.length; i++) {
       System.out.print("Enter array element " + (i + 1) + " : ");

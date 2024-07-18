@@ -7,7 +7,7 @@ import _6_Arrays.ArrayUtility;
 public class BinarySearchDescIntegerArray {
 
   // ( start + end ) / 2 == start + ((end - start) / 2))
-  static int binarySearchIntegerArray(int arr[], int target) {
+  static int binarySearchDescIntegerArray(int arr[], int target) {
     int start = 0, end = arr.length - 1, mid;
     while (start <= end) {
       mid = start + ((end - start) / 2);
@@ -31,7 +31,7 @@ public class BinarySearchDescIntegerArray {
       int arr[] = ArrayUtility.inputIntArray(size);
       System.out.print("Enter the target element to search : ");
       int target = sc.nextInt();
-      int index = binarySearchIntegerArray(arr, target);
+      int index = binarySearchDescIntegerArray(arr, target);
 
       if (index < 0) {
         System.out.println("\n>> Element is not present in the array.");

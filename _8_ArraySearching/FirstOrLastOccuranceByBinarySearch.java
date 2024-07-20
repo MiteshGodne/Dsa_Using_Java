@@ -5,7 +5,7 @@ import java.util.Scanner;
 import _6_Arrays.ArrayUtility;
 
 public class FirstOrLastOccuranceByBinarySearch {
-  // This algorithm is only applicable on array sorted in ascending order.
+  // This algorithm works on array sorted in ascending order.
   public static int firstOrLastOccuranceByBinarySearch(int arr[], int target, boolean isFirst) {
     int index = -1, start = 0, end = arr.length - 1, mid;
     while (start <= end) {

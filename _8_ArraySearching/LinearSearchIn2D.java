@@ -5,7 +5,7 @@ import java.util.Scanner;
 import _7_TwoDArray.TwoDArrayUtility;
 
 public class LinearSearchIn2D {
-  public static void linearSingleOccuranceIn2D(int[][] arr, int target, boolean findLast) {
+  public static void linearSingleOccurrenceIn2D(int[][] arr, int target, boolean findLast) {
     int inner = -1, outer = -1;
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr[i].length; j++) {
@@ -14,7 +14,7 @@ public class LinearSearchIn2D {
             outer = i;
             inner = j;
           } else {
-            System.out.printf("\nElement's first occurance is at index : Array [ %d ][ %d ]\n", outer, inner);
+            System.out.printf("\nElement's first occurrence is at index : Array [ %d ][ %d ]\n", outer, inner);
             return;
           }
         }
@@ -22,7 +22,7 @@ public class LinearSearchIn2D {
     }
     TwoDArrayUtility.print2DIntArray(arr);
     if (inner != -1) {
-      System.out.printf("Element's last occurance is at index : Array [ %d ][ %d ]\n", outer, inner);
+      System.out.printf("Element's last occurrence is at index : Array [ %d ][ %d ]\n", outer, inner);
     } else {
       System.out.print("\nElement Not Found !!\n");
     }
@@ -35,7 +35,7 @@ public class LinearSearchIn2D {
       System.out.print("Enter the target element you want to search : ");
       int target = sc.nextInt();
 
-      System.out.print("\nEnter Y/y if you want the last occurrance of target : ");
+      System.out.print("\nEnter Y/y if you want the last occurrence of target : ");
       char last = sc.next().charAt(0);
       boolean findLast = false;
 
@@ -43,7 +43,7 @@ public class LinearSearchIn2D {
         findLast = true;
       }
 
-      linearSingleOccuranceIn2D(arr, target, findLast);
+      linearSingleOccurrenceIn2D(arr, target, findLast);
     }
 
   }

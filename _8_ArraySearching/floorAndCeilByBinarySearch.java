@@ -1,6 +1,6 @@
 package _8_ArraySearching;
 
-public class floorAndCeilByBinarySearch {
+public class FloorAndCeilByBinarySearch {
   public static int floorFromArrayByBinarySearch(int arr[], int target){
     int floor = -1, start = 0, end = arr.length-1, mid;
     while(start<=end){

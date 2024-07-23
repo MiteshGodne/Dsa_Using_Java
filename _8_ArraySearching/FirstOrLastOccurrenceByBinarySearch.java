@@ -33,7 +33,7 @@ public class FirstOrLastOccurrenceByBinarySearch {
       int size = sc.nextInt();
 
       System.out.print(
-          "\nEnter the array elements in increasing order only as this program runs on Binary Search Algorithm - ");
+          "\nEnter the array elements in increasing order only as this program runs on Binary Search Algorithm - \n");
       int arr[] = ArrayUtility.inputIntArray(size);
 
       System.out.print("\nEnter the target element to search : ");
@@ -50,7 +50,8 @@ public class FirstOrLastOccurrenceByBinarySearch {
       } else {
         System.out.print("\nElement not found in the array.");
       }
-    } catch (Exception e) {
+    }
+    catch (Exception e) {
       System.out.print("\nError >> Invalid Input !!");
     }
   }

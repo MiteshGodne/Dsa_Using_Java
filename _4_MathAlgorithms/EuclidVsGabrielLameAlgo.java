@@ -43,6 +43,8 @@ public class EuclidVsGabrielLameAlgo {
       System.out.println(euclidGcd(num1, num2));
       // Gabriel Lame's enhanced Euclid's algorithm
       System.out.println(gabrielGcd(num1, num2));
+    } catch (Exception e) {
+      System.out.println("\nInvalid Input !! Please restart the program and enter a valid input ...");
     }
   }
 }

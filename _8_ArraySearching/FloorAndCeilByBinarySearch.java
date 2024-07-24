@@ -57,7 +57,7 @@ public class FloorAndCeilByBinarySearch {
       int size = sc.nextInt();
 
       System.out.print(
-          "\nEnter the array elements in increasing order only as this program runs on Binary Search Algorithm - \n");
+          "\nNote - Enter the array elements in increasing order only as this program runs on Binary Search Algorithm - \n");
       int arr[] = ArrayUtility.inputIntArray(size);
 
       System.out.print("\nEnter the target element to search it's floor and ceil from the array : ");

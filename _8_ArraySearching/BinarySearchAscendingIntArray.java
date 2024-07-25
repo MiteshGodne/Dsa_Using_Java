@@ -8,18 +8,19 @@ public class BinarySearchAscendingIntArray {
 
   // ( start + end ) / 2 == start + ((end - start) / 2))
   static int binarySearchAscendingIntArray(int arr[], int target) {
-    int start = 0, end = arr.length - 1, mid;
+    int start = 0, end = arr.length - 1, ans = -1, mid;
     while (start <= end) {
       mid = start + ((end - start) / 2);
       if (arr[mid] == target) {
-        return mid;
+        ans = mid;
+        return ans;
       } else if (arr[mid] < target) {
         start = mid + 1;
       } else {
         end = mid - 1;
       }
     }
-    return -1;
+    return ans;
   }
 
   public static void main(String[] args) {

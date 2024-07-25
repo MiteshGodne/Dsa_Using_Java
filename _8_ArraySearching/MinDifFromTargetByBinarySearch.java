@@ -44,7 +44,7 @@ public class MinDifFromTargetByBinarySearch {
             target);
       } else {
         System.out.printf(
-            "\nMinimum Absolute Difference is ' %d ' for the target element and element ' %d ' present at index ' %d ' \n",
+            "\nMinimum Absolute Difference is ' %d ' for the target element and element ' %d ' present at index ' %d '\n",
             Math.abs(arr[index] - target), arr[index], index);
       }
     } catch (Exception e) {

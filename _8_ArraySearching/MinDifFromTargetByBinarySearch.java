@@ -34,16 +34,18 @@ public class MinDifFromTargetByBinarySearch {
           "\nNote - Enter the array elements in increasing order only as this program runs on Binary Search Algorithm - \n");
       int arr[] = ArrayUtility.inputIntArray(size);
 
-      System.out.print("\nEnter the target element to search it's minimum absolute difference with an element, the element and its index from the array : ");
+      System.out.print(
+          "\nEnter the target element to search it's minimum absolute difference with an element, the element and its index from the array : ");
       int target = sc.nextInt();
 
       int index = minAbsoluteDiff(arr, target);
       if (size == 0) {
-        System.out.printf("\nArray is empty hence the difference is equal to the element itself i.e. ' %d '.\n", target);
+        System.out.printf("\nArray is empty hence the difference is equal to the element itself i.e. ' %d '.\n",
+            target);
       } else {
         System.out.printf(
             "\nMinimum Absolute Difference is ' %d ' for the target element and element ' %d ' present at index ' %d ' \n",
-            Math.abs(arr[index] - target),arr[index], index);
+            Math.abs(arr[index] - target), arr[index], index);
       }
     } catch (Exception e) {
       System.out.print("\nError >> Invalid Input !!");

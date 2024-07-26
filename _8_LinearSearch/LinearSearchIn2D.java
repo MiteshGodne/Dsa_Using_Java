@@ -1,4 +1,4 @@
-package _8_ArraySearching;
+package _8_LinearSearch;
 
 import java.util.Scanner;
 

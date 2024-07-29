@@ -31,13 +31,13 @@ public class LeetCode2064MinimizedMaximumProductsDistributed {
   }
 
   public static boolean isStoreCountValid(int[] quantities, int assumedResult, int totalStores) {
-    int currentStores = 0;
+    int storeCount = 0;
     for (int i = 0; i < quantities.length; i++) {
-      currentStores += quantities[i] / assumedResult;
+      storeCount += quantities[i] / assumedResult;
       if (quantities[i] % assumedResult != 0) {
-        currentStores++;
+        storeCount++;
       }
-      if (currentStores > totalStores) {
+      if (storeCount > totalStores) {
         return false;
       }
     }

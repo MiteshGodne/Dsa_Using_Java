@@ -49,7 +49,7 @@ public class LeetCode540_SingleElementBinarySearch {
     int start = 0, end = nums.length-2;
     while(start<=end){
       int mid = start + (end-start)/2;
-      // if true, then its a left half --> move right
+      // if true, then it is a left half hence move right else move left
       if(nums[mid] == nums[mid^1]){
         start = mid + 1;
       }else{

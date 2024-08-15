@@ -99,7 +99,7 @@ public class SelectionSort {
       ArrayUtility.printIntegerArray(arr);
 
       bidirectionalDescSelectionSort(arr);
-      System.out.println("\nArray after Bidirectional Ascending selection Sort becomes - ");
+      System.out.println("\nArray after Bidirectional Descending selection Sort becomes - ");
       ArrayUtility.printIntegerArray(arr);
 
       bidirectionalAscSelectionSort(arr);

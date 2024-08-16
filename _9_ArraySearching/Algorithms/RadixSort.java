@@ -65,7 +65,7 @@ public class RadixSort {
     // int[] arr = ArrayUtility.inputIntArray(6);
     int arr[] = { 202, 1, 42, 302, 34, 101 };
     radixSortAsc(arr);
-    System.out.println("\nArray after Ascending count Sort becomes - ");
+    System.out.println("\nArray after Ascending Radix Sort becomes - ");
     ArrayUtility.printIntegerArray(arr);
   }
 }

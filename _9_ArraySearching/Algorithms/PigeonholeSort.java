@@ -34,7 +34,7 @@ public class PigeonholeSort {
     }
 
     int freqIdx = 0, index = 0;
-    while (freqIdx < k) {   // TC of this loop is O(k+n)
+    while (freqIdx < k) { // TC of this loop is O(k+n)
       if (freqCount[freqIdx] != 0) {
         arr[index] = freqIdx + min;
         index++;
@@ -51,7 +51,7 @@ public class PigeonholeSort {
     // int[] arr = ArrayUtility.inputIntArray(6);
     int arr[] = { 24, 22, 25, 22, 21, 27, 28, 20, 22 };
     pigeonholeSortAsc(arr);
-    System.out.println("\nArray after Ascending count Sort becomes - ");
+    System.out.println("\nArray after Pigeonhole Sort becomes - ");
     ArrayUtility.printIntegerArray(arr);
   }
 }

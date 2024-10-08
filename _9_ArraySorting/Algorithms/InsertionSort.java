@@ -1,4 +1,4 @@
-package _9_ArraySearching.Algorithms;
+package _9_ArraySorting.Algorithms;
 
 import _6_Arrays.ArrayUtility;
 
@@ -8,12 +8,12 @@ public class InsertionSort {
   public static void insertionSortAsc(int[] arr) {
     for (int i = 1; i < arr.length; i++) {
       int key = arr[i], j = i - 1;
-      // Shift arr[j] to arr[j+1] till key is larger
+      // Shift arr[j] to arr[j+1] till key is smaller than its previous element
       while (j >= 0 && arr[j] > key) {
         arr[j + 1] = arr[j];
         j--;
       }
-      // after key becomes smaller or j goes below 0, place the key to j+1
+      // after key becomes larger or j goes below 0, place the key to j+1
       arr[j + 1] = key;
     }
   }
@@ -21,12 +21,12 @@ public class InsertionSort {
   public static void insertionSortDesc(int[] arr) {
     for (int i = 1; i < arr.length; i++) {
       int key = arr[i], j = i - 1;
-      // Shift arr[j] to arr[j+1] till key is smaller
+      // Shift arr[j] to arr[j+1] till key is larger than its previous elements
       while (j >= 0 && arr[j] < key) {
         arr[j + 1] = arr[j];
         j--;
       }
-      // after key becomes larger or j goes below 0, place the key to j+1
+      // after key becomes smaller or j goes below 0, place the key to j+1
       arr[j + 1] = key;
     }
   }

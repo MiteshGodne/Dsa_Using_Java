@@ -1,4 +1,4 @@
-package _9_ArraySearching.Algorithms;
+package _9_ArraySorting.Algorithms;
 
 import _6_Arrays.ArrayUtility;
 
